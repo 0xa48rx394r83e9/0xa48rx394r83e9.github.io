@@ -1,0 +1,123 @@
+<html>
+  <head>
+  	<title>Ludum Dare #47</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163891247-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-163891247-3');
+    </script>
+  </head>
+  <body>
+    <style>
+      h2 {
+        text-align: center;
+        margin: 20px;
+      }
+        body {
+            background-color: #EEE;
+            width: 900px; margin: 0px auto;
+        }
+        #game {
+
+        }
+        #instructions {
+            width: 95%;
+            height: 240px;
+            margin: 20px auto;
+            padding: 5px;
+            background-color: #EEE;
+        }
+
+        #wrapper {
+            box-shadow: 0px 0px 25px 25px rgba(0, 0, 0, .15);
+        }
+
+		.overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        .popup {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+    </style>
+    <div id="wrapper">
+		<div id="game"></div>
+		<div class="overlay" id="overlay">
+			<div class="popup">
+				<h1>Instructions</h1>
+				<div id="instructions">
+					Guide Hammy the Hamster to escape his cage, on his way to be saved from being stuck in a loop within his wheel!
+					<br>
+					<br>
+					Don't get the Key stuck in hay! Or you'll have to reset the level (space)
+					<br>
+					<br>
+					If the controls dont work, please click down here in the instructions then back on the hamster in the game.
+					<h3>Controls</h3>
+					<ul>
+						<li>Use Left and Right arrow keys to move</li>
+						<li>Space bar to reset</li>
+					</ul>
+				</div>
+				<button onclick="togglePopup()">Close</button>
+			</div>
+		</div>
+
+    </div>
+    <script type="text/javascript" src="https://rawgithub.com/craftyjs/Crafty/release/dist/crafty-min.js"></script>
+    <script type="text/javascript" src="components/audio_controller.js"></script>
+    <script type="text/javascript" src="assets/libraries/matter-old.js"></script>
+    <script type="text/javascript" src="assets/libraries/craftymatter.js"></script>
+    <script type="text/javascript" src="assets.js"></script>
+    <script type="text/javascript" src="components/player.js"></script>
+    <script type="text/javascript" src="components/ball.js"></script>
+    <script type="text/javascript" src="components/platform.js"></script>
+    <script type="text/javascript" src="components/house.js"></script>
+    <script type="text/javascript" src="components/platform_hitbox.js"></script>
+    <script type="text/javascript" src="components/tunnel.js"></script>
+    <script type="text/javascript" src="components/background.js"></script>
+    <script type="text/javascript" src="components/credittext.js"></script>
+    <script type="text/javascript" src="components/foreground.js"></script>
+    <script type="text/javascript" src="components/hamster.js"></script>
+    <script type="text/javascript" src="components/wheel.js"></script>
+    <script type="text/javascript" src="scenes/loading.js"></script>
+    <script type="text/javascript" src="scenes/game.js"></script>
+    <script type="text/javascript" src="scenes/title.js"></script>
+    <script type="text/javascript" src="scenes/level1.js"></script>
+    <script type="text/javascript" src="scenes/level2.js"></script>
+    <script type="text/javascript" src="scenes/level3.js"></script>
+    <script type="text/javascript" src="scenes/level4.js"></script>
+    <script type="text/javascript" src="scenes/level5.js"></script>
+    <script type="text/javascript" src="scenes/level6.js"></script>
+    <script type="text/javascript" src="scenes/level7.js"></script>
+    <script type="text/javascript" src="scenes/level8.js"></script>
+    <script type="text/javascript" src="scenes/end_screen.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="cameratrack.js"></script>
+    <script type="text/javascript" src="components/hay.js"></script>
+    <script type="text/javascript" src="components/door.js"></script>
+    <script type="text/javascript" src="components/timer.js"></script>
+    <script type="text/javascript" src="components/ladder.js"></script>
+    <script type="text/javascript" src="components/rock.js"></script>
+    <script type="text/javascript" src="components/key.js"></script>
+    <script type="text/javascript" src="components/ball_controller.js"></script>
+    <script type="text/javascript" src="components/level_controller.js"></script>
+
+  </body>
+</html>
